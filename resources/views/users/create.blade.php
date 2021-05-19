@@ -47,7 +47,7 @@
                             <label for="grid-last-name" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                                 Image
                             </label>
-                            <input value="{{ old('profile_photo_path') }}" name="profile_photo_path" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4" id="grid-last-name" type="file" placeholder="User Image">
+                            <input name="profile_photo_path" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4" id="grid-last-name" type="file" placeholder="User Image">
                         </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-6">
