@@ -14,7 +14,7 @@ class FoodController extends Controller
             $id = $request->input('id');
             $limit = $request->input('limit', 6);
             $name = $request->input('name');
-            $types = $request->input('types');
+            $types = $request->input('type');
 
             $price_from = $request->input('price_from');
             $price_to = $request->input('price_to');
@@ -45,7 +45,7 @@ class FoodController extends Controller
                   $food->where('name', 'like', '%' . $name . '%');
             }
             if ($types) {
-                  $food->where('types', 'like', '%' . $types . '%');
+                  $food->where('type', 'like', '%' . $types . '%');
             }
             if ($price_from) {
                   $food->where('price', '>=', $price_from);

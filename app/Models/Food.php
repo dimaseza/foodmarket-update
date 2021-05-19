@@ -13,7 +13,7 @@ class Food extends Model
       use HasFactory, SoftDeletes;
 
       protected $fillable = [
-            'name', 'description', 'ingredients', 'price', 'rate', 'types',
+            'name', 'description', 'ingredients', 'price', 'rate', 'type',
             'picturePath'
       ];
 
